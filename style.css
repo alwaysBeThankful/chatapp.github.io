@@ -62,7 +62,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
 }
 
@@ -122,9 +122,13 @@ ul li {
 
 /* - MAIN - */
 
+/* ======
+IPHONE 
+====== */
 .iphone-wrapper {
   position: relative;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .iphone-wrapper::before {
@@ -132,7 +136,11 @@ ul li {
   position: absolute;
   width: 100%;
   height: 70%;
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: linear-gradient(
+    to bottom,
+    var(--Moderate-Violet),
+    var(--Light-Violet)
+  );
   top: 0;
   right: 0;
   left: -17.5rem;
@@ -143,12 +151,161 @@ ul li {
 
 .iphone-model {
   position: relative;
-  height: 29.375rem;
-  max-width: 15.75rem;
+  height: 33.375rem;
+  max-width: 16.75rem;
   background-color: var(--White);
   border-radius: 30px;
   margin: 4rem auto 0;
+  padding: 0.6rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ======
+IPHONE TOP
+====== */
+.iphone-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 1rem;
+  background: linear-gradient(
+    to left,
+    var(--Light-Magenta),
+    var(--Light-Violet)
+  );
+  border-radius: 30px 30px 8px 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 4=0px 2px -2px;
+  z-index: 2;
+}
+
+.iphone-top::before {
+  content: "";
+  position: absolute;
+  height: 0.8rem;
+  width: 5.2rem;
+  top: 4px;
+  transform: scale(1.6);
+  background-color: var(--White);
+  border-radius: 0 0 10px 10px;
+}
+
+.iphone-top img {
+  margin-top: 2.5rem;
+  margin-right: 9rem;
+  max-width: 12%;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+
+.fa-angle-left {
+  position: absolute;
+  bottom: 26.5%;
+  left: 7%;
+  color: var(--White);
+}
+
+.fa-ellipsis-vertical {
+  position: absolute;
+  bottom: 28%;
+  right: 6%;
+  color: var(--White);
+}
+
+.iphone-top-text {
+  position: absolute;
+  right: 10%;
+  margin-top: 2.5rem;
+  margin-right: 4rem;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.iphone-top-text p:last-child {
+  font-size: 0.6rem;
+  color: var(--Pale-Violet);
+}
+
+/* ======
+IPHONE BODY
+====== */
+.iphone-body {
+  position: relative;
+  height: 27.3rem;
+  max-width: 16.75rem;
+  margin-top: -0.5rem;
+  border-radius: 0 0 30px 30px;
+  background-color: var(--Light-Grayish-Violet);
+  z-index: 1;
+}
+
+.left-text-bubble {
+  position: absolute;
+  top: 5.5%;
+  left: 4%;
+  height: 45px;
+  width: 150px;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  background-color: #f3d9fa;
+  color: var(--Moderate-Violet);
+  border-radius: 12px 12px 12px 5px;
+}
+
+.text2 {
+  top: 18%;
+}
+
+.right-text-bubble p {
+  height: 45px;
+  width: 150px;
+  margin-top: 0.8rem;
+  margin-left: 5.6rem;
+  padding: 0.5rem;
+  font-size: 0.6em;
+  background-color: var(--White);
+  color: var(--Desaturated-Dark-Violet);
+  border-radius: 12px 12px 5px 12px;
+}
+
+.right-text-bubble .text3 {
+  margin-top: 0.5rem;
+  margin-left: 8.7rem;
+  height: 30px;
+  width: 100px;
+  border-radius: 12px 12px 5px 12px;
+}
+
+.pet-photos {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 9rem;
+  padding-left: 6.5rem;
+}
+
+.pet-photos img {
+  width: 40px;
+  border-radius: 10px;
+}
+
+.left-text-reply {
+  position: absolute;
+  left: 4%;
+  height: 60px;
+  width: 150px;
+  margin-top: 1.2rem;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  background-color: #f3d9fa;
+  color: var(--Moderate-Violet);
+  border-radius: 12px 12px 12px 5px;
+}
+
+.cta-30m {
+  display: flex;
+  margin-top: 6rem;
+  padding-left: 0.6rem;
+  font-size: 0.8rem;
 }
 
 /* ======
