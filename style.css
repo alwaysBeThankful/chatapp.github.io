@@ -134,7 +134,7 @@ IPHONE
 .iphone-wrapper::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 98%;
   height: 70%;
   background: linear-gradient(
     to bottom,
@@ -151,7 +151,6 @@ IPHONE
 
 .iphone-model {
   position: relative;
-  height: 33.375rem;
   max-width: 16.75rem;
   background-color: var(--White);
   border-radius: 30px;
@@ -231,9 +230,9 @@ IPHONE BODY
 ====== */
 .iphone-body {
   position: relative;
-  height: 27.3rem;
+  height: 33rem;
   max-width: 16.75rem;
-  margin-top: -0.5rem;
+  margin-top: -0.8rem;
   border-radius: 0 0 30px 30px;
   background-color: var(--Light-Grayish-Violet);
   z-index: 1;
@@ -253,7 +252,7 @@ IPHONE BODY
 }
 
 .text2 {
-  top: 18%;
+  top: 16.5%;
 }
 
 .right-text-bubble p {
@@ -280,11 +279,11 @@ IPHONE BODY
   display: flex;
   gap: 0.5rem;
   padding-top: 9rem;
-  padding-left: 6.5rem;
+  padding-left: 5rem;
 }
 
 .pet-photos img {
-  width: 40px;
+  width: 48px;
   border-radius: 10px;
 }
 
@@ -298,16 +297,82 @@ IPHONE BODY
   font-size: 0.6rem;
   background-color: #f3d9fa;
   color: var(--Moderate-Violet);
-  border-radius: 12px 12px 12px 5px;
+  border-radius: 12px 12px 12px 6px;
 }
 
-.cta-30m {
+.cta-walk {
   display: flex;
-  margin-top: 6rem;
-  padding-left: 0.6rem;
-  font-size: 0.8rem;
+  align-items: center;
+  gap: 0.5rem;
+  width: 71%;
+  margin-top: 5.5rem;
+  margin-left: 0.7rem;
+  padding: 0.6rem 0.5rem;
+  font-size: 0.6rem;
+  color: var(--Light-Grayish-Violet);
+  background: linear-gradient(
+    to right,
+    var(--Light-Magenta),
+    var(--Light-Violet)
+  );
+  border-radius: 12px 12px 12px 6px;
 }
 
+.cta-walk label {
+  opacity: 0.8;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 50%;
+  outline: var(--Light-Grayish-Violet) solid 1px;
+  opacity: 0.4;
+}
+
+.cta-walk p {
+  margin-left: 1.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.second-option {
+  margin-top: 0.5rem;
+}
+
+.second-option p {
+  margin-left: 3rem;
+}
+
+.message-bubble {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 0.7rem;
+  padding: 0.6rem 1rem;
+  width: 90%;
+  font-size: 0.65rem;
+  background-color: var(--White);
+  border-radius: 50px;
+}
+
+.fa-angle-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 21%;
+  right: 5%;
+  padding: 0.3rem 0.5rem;
+  transform: scale(1.4);
+  color: var(--White);
+  background-color: var(--Very-Dark-Desaturated-Violet);
+  border-radius: 50%;
+}
+
+.message-bubble p {
+  color: var(--Grayish-Blue);
+}
 /* ======
 ATTRIBUTION
 ====== */
