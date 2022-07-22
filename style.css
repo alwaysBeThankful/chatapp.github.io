@@ -4,6 +4,7 @@
   PRIMARY
   ====== */
   --Pale-Violet: hsl(276, 100%, 81%);
+  --Pale-Violet-Bubble: rgba(216, 158, 255, 0.2);
   --Moderate-Violet: hsl(276, 55%, 52%);
   --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
   --Grayish-Blue: hsl(206, 6%, 79%);
@@ -149,6 +150,22 @@ IPHONE
   border-radius: 0 0 18rem 18rem;
 }
 
+.iphone-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 57%;
+  background: var(--Light-Grayish-Violet);
+  top: 80%;
+  right: 0;
+  left: 18.1rem;
+  bottom: 0;
+  transform: scale(1.5);
+  border-radius: 18rem 18rem 0 0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
 .iphone-model {
   position: relative;
   max-width: 16.75rem;
@@ -183,7 +200,7 @@ IPHONE TOP
   position: absolute;
   height: 0.8rem;
   width: 5.2rem;
-  top: 4px;
+  top: 3px;
   transform: scale(1.6);
   background-color: var(--White);
   border-radius: 0 0 10px 10px;
@@ -246,7 +263,7 @@ IPHONE BODY
   width: 150px;
   padding: 0.5rem;
   font-size: 0.6rem;
-  background-color: #f3d9fa;
+  background-color: var(--Pale-Violet-Bubble);
   color: var(--Moderate-Violet);
   border-radius: 12px 12px 12px 5px;
 }
@@ -295,7 +312,7 @@ IPHONE BODY
   margin-top: 1.2rem;
   padding: 0.5rem;
   font-size: 0.6rem;
-  background-color: #f3d9fa;
+  background-color: var(--Pale-Violet-Bubble);
   color: var(--Moderate-Violet);
   border-radius: 12px 12px 12px 6px;
 }
@@ -373,13 +390,42 @@ input[type="radio"] {
 .message-bubble p {
   color: var(--Grayish-Blue);
 }
+
+.chatapp-benefit {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: larger;
+}
+
+.chatapp-benefit h1 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--Very-Dark-Desaturated-Violet);
+}
+
+.chatapp-benefit p {
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  color: var(--Dark-Grayish-Violet);
+  font-weight: lighter;
+}
+
 /* ======
 ATTRIBUTION
 ====== */
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 2rem;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  background: linear-gradient(
+    to bottom,
+    var(--Moderate-Violet),
+    var(--Light-Violet)
+  );
+  background-clip: text;
+  color: transparent;
 }
